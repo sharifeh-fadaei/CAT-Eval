@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from typing import Any, Dict
 
 from .model_registry import model_registry
@@ -20,6 +19,7 @@ async def evaluate_sample(
     model_key: str,
 ) -> Dict[str, Any]:
     model_info = model_registry.resolve(model_key)
+
     payload = build_messages(
         image_bytes=image_bytes,
         image_filename=image_filename,
@@ -29,21 +29,26 @@ async def evaluate_sample(
         sample_name=sample_name,
         model_provider_id=model_info.provider_id,
     )
+
     raw_response = await openrouter_client.complete(payload)
+
     if not isinstance(raw_response, dict):
-        raise ValueError("Model response was not JSON.")
+        raise ValueError("Model response was not JSON object.")
+
     try:
         evaluation_table = raw_response["evaluation_table"]
         final_score, _ = compute_scores(evaluation_table)
     except (KeyError, EvaluationValidationError) as exc:
         raise ValueError(f"Invalid evaluation table: {exc}") from exc
 
+    # NOTE:
+    # - We intentionally do NOT store raw_response again (avoids duplication).
+    # - We intentionally do NOT inject improvement_report (you removed it from the schema).
     return {
         "sample_name": raw_response.get("sample_name", sample_name),
         "model": raw_response.get("model", model_info.provider_id),
+        "model_provider_id": model_info.provider_id,
         "evaluation_table": evaluation_table,
-        "improvement_report": raw_response.get("improvement_report", []),
         "final_score": final_score,
-        "raw_response": raw_response,
         "model_key": model_key,
     }

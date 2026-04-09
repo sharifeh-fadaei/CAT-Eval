@@ -14,6 +14,14 @@ def write_batch_json(run_dir: Path, run_id: str, model_key: str, batch_index: in
 
 def write_single_json(run_dir: Path, run_id: str, record: Dict[str, Any]) -> Path:
     run_dir.mkdir(parents=True, exist_ok=True)
-    output_path = run_dir / f"single_{run_id}.json"
+
+    sample_name = str(record.get("sample_name", "unknown-sample"))
+    model_key = str(record.get("model_key", "unknown-model"))
+
+    # filesystem-safe-ish
+    safe_sample = sample_name.replace("/", "-").replace("\\", "-").replace(" ", "_")
+    safe_model = model_key.replace("/", "-").replace("\\", "-").replace(" ", "_")
+
+    output_path = run_dir / f"{safe_sample}__{safe_model}__{run_id}.json"
     output_path.write_text(json.dumps(record, indent=2), encoding="utf-8")
     return output_path
