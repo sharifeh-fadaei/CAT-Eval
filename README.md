@@ -1,39 +1,61 @@
-# HQC-CAT Automatic Alt-Text Evaluator for Charts
+CAT-Eval: Automatic Evaluator for Chart Alt-Text Quality
+This repository contains the code, data, and evaluation results from my master's thesis:
+"Generative AI for High-Quality Alt-Text for Charts: CAT-Eval — Automatic Evaluator for Chart Alt-Text Quality"
+Sharifeh Fadaeijouybari, Universität Trier, 2026.
+What this project does
+Charts in scientific papers are often inaccessible to blind and low-vision (BLV) readers because alt text is missing or poorly written. This thesis introduces two things:
 
-Research-grade instrument implementing the HQ-CAT v1 evaluator prompt. The system enforces a fixed rubric, semantic-level coverage (L1–L4), strict JSON outputs, and reproducible single/batch workflows.
+HQ-CAT — a quality framework that defines six factors for scoring chart alt text (Factual Accuracy, Completeness, Context Alignment, Conciseness, Language Quality, and Imaginability), weighted across two dimensions: semantic content (70%) and presentation quality (30%).
+CAT-Eval — a pipeline that uses multimodal LLMs to automatically evaluate chart alt text quality using HQ-CAT. The pipeline takes a chart image, its alt text, the figure caption, and surrounding text from the paper, and produces factor-level scores with diagnostic comments.
 
-## Project layout
-- `backend/` – FastAPI service. Loads canonical prompt from `backend/app/core/evaluator_prompt/hqcat_v1.txt`.
-- `frontend/` – React + Vite UI with Single and Batch evaluation flows.
-- `runs/` – persisted run outputs (JSON, docx, zipped bundles).
+Four models were tested: GPT-5.1, Claude Sonnet 4.5, Gemini 3 Pro, and Grok 4. The results were compared against a gold standard of 100 manually annotated samples and validated with a blinded human study.
+Repository Contents
+data/
 
-## Backend setup
-1. Install Python 3.11+ and create a virtual environment.
-2. Install dependencies:
-   ```bash
-   pip install -r backend/requirements.txt
-   ```
-3. Run the API:
-   ```bash
-   uvicorn backend.app.main:app --reload --port 8000
-   ```
-4. Optional: set `OPENROUTER_API_KEY` in a `.env` file to call real models; otherwise a deterministic mock is used.
+gold_standard.xlsx — The 100 annotated chart–alt text pairs with factor-level scores, diagnostic comments, L1–L4 coverage labels, and overall HQ-CAT scores.
+few_shot_examples.json — The five fully worked exemplars used in the few-shot prompt, with complete alt texts, captions, and local texts.
 
-## Frontend setup
-1. Install Node.js (18+ recommended).
-2. Install deps and start dev server:
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-3. The UI defaults to `http://localhost:8000` for the API. Override with `VITE_API_BASE` if needed.
+prompts/
 
-## Usage
-- **Single Evaluation**: upload a chart image plus alt text (caption/local text optional) and choose one model. Download JSON+docx bundle from the UI or `GET /api/single/{run_id}/download`.
-- **Batch Evaluation**: upload `.docx` or `.json` dataset plus `dataset_root` where sample image folders live, specify subset selector (ranges/lists), select one or more models, and choose output mode. Download all artifacts from `GET /api/runs/{run_id}/download`.
+cat_eval_prompt.txt — The exact prompt sent to all four models. Includes the system instruction, semantic level definitions, factor weights, JSON output schema, and few-shot exemplar placeholders.
 
-## Notes
-- The evaluator prompt is fixed in `backend/app/core/evaluator_prompt/hqcat_v1.txt` and is never editable via UI.
-- Scoring applies the severe factual-accuracy cap (final score ≤ 5 if D1 severity is Severe).
-- Dataset parsing supports `sample_name`, `alt_text`, `caption`, `local_text` keys in JSON or colon-prefixed lines in DOCX.
+results/
+
+Raw JSON outputs from each model (one file per model, 100 evaluations each).
+
+analysis/
+
+Scripts for computing MAE, MSD, signed difference distributions, ANOVA tests, and generating the figures used in the thesis.
+
+human_validation/
+
+The questionnaire used in the blinded validation study and the participant response data.
+
+pipeline/
+
+The evaluation script that sends samples to each model via API and collects structured JSON responses.
+
+How to run the pipeline
+
+Clone the repository
+Install dependencies: pip install -r requirements.txt
+Add your API key for OpenRouter in a .env file
+Run: python pipeline/run_evaluation.py --model gpt-5.1 --input data/gold_standard.xlsx
+
+The script sends each sample to the specified model and saves the JSON output to results/.
+Key findings
+
+Three of four models showed systematic leniency (scoring higher than the gold standard). Claude tracked the gold standard most closely but showed errors in both directions.
+Factual Accuracy was the hardest factor for every model, with errors roughly double those on Completeness.
+Six failure patterns were identified, the most important being "Right Diagnosis, Wrong Score" — models could describe quality problems accurately in their comments but did not reflect them in their scores.
+A blinded human validation study confirmed these findings and showed that comprehension errors damage trust more than consistent leniency.
+
+Citation
+If you use HQ-CAT, CAT-Eval, or the gold standard dataset in your work, please cite:
+Fadaeijouybari, S. (2026). Generative AI for High-Quality Alt-Text for Charts:
+CAT-Eval — Automatic Evaluator for Chart Alt-Text Quality.
+Master's thesis, Universität Trier.
+License
+This project is released for research purposes. Please contact the author for commercial use.
+Contact
+Sharifeh Fadaeijouybari — S2shfada@uni-trier.de
