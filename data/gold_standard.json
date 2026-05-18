@@ -1,0 +1,3651 @@
+[
+  {
+    "sample_id": "test_1",
+    "chart_type": "bar chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 4,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 4,
+      "D2_language_quality": 5,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The given information are correct but not in an understandable way.",
+      "D1_completeness": "Main pattern is missing. Agreement and comparison between questions are not stated.",
+      "D1_context_alignment": "Direction matches the paper, but added Numeric lists are not supported by caption or local text.",
+      "D2_conciseness": "Numeric lists take space without helping understanding.",
+      "D2_language_quality": "Reads like raw notes, not reader-oriented description.",
+      "D2_imaginability": "Chart structure and overall trends are not described clearly."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "covered",
+        "L3": "not covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "misaligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.55
+  },
+  {
+    "sample_id": "test_2",
+    "chart_type": "line chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 6,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 6,
+      "D2_language_quality": 6,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": null,
+      "D1_completeness": "Does not describe axes, probability curve, thresholds (0.5 vs 0.995), or the alignment with the audio signal shown in the figure.",
+      "D1_context_alignment": "consistent with caption and local text.",
+      "D2_conciseness": "Length is reasonable, but technical explanation replaces visual description.",
+      "D2_language_quality": "Clear but reads as method explanation rather than figure description.",
+      "D2_imaginability": "Does not describe the visual layout (two panels, curves, markers, time axis), making mental imaginability difficult."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "partial"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "weak",
+        "L4": "partial"
+      }
+    },
+    "hq_cat_total": 7
+  },
+  {
+    "sample_id": "test_4",
+    "chart_type": "box plot_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 5,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 5,
+      "D2_language_quality": 6,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Specifically, didn´t mentioned the chart types.  Describes all interventions as reducing MW without noting variability or overlap.",
+      "D1_completeness": "Does not clearly state the main comparison (pre vs post reduction) or that intervention types are similar in effect, as shown in the figure.",
+      "D1_context_alignment": "Generally aligned with caption and local text.",
+      "D2_conciseness": "Some unnecessary numeric detail without clear benefit for understanding.",
+      "D2_language_quality": "Mostly clear, but informal phrasing and inconsistent precision.",
+      "D2_imaginability": "Briefly mentions boxplots but does not clearly describe medians, comparison direction, or layout across panels."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "weal",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.95
+  },
+  {
+    "sample_id": "test_5",
+    "chart_type": "heat map_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 5,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 6,
+      "D2_language_quality": 6,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Chart type is not mentioned. Statements are correct, but the alt text does not reflect the full range of values shown and oversimplifies variation across conditions.",
+      "D1_completeness": "Misses key visible patterns such as differences across data types (e.g., weather vs banking) and transmission principles highlighted in the figure.",
+      "D1_context_alignment": "Generally aligned with caption and local text but lacks several main insights .",
+      "D2_conciseness": "Reasonably concise, but vague statements reduce information value.",
+      "D2_language_quality": "Clear but generic; reads more like a high-level summary than a figure description.",
+      "D2_imaginability": "Heatmap structure, axes, and color scale are not described, making the figure hard to imagine."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.65
+  },
+  {
+    "sample_id": "test_6",
+    "chart_type": "line chart_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 3,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 6,
+      "D2_language_quality": 5,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Description matches the figure, but just gives general information of the panel without any detailed information.",
+      "D1_completeness": "Does not describe differences between gesture types, signal patterns, or the effect of transformation shown across panels.",
+      "D1_context_alignment": "consistent with caption, but removed key contextual points (sensor types, rotation vs shifting emphasis).",
+      "D2_conciseness": "Reasonable length, but vague phrasing reduces efficiency.",
+      "D2_language_quality": "Grammatically weak and imprecise wording (“each gesture have,” unclear timing sentence).",
+      "D2_imaginability": "Does not clearly convey the multi-panel layout, signal axes, or how plots differ before vs after transformation."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.7
+  },
+  {
+    "sample_id": "test_8",
+    "chart_type": "line chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 4,
+      "D1_context_alignment": 5,
+      "D2_conciseness": 1,
+      "D2_language_quality": 3,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Given information is correct but absolutely in a repetitive and wrong way.",
+      "D1_completeness": "Overfocuses on listing values and misses the main visual insight: permissive shifts curves left; older adults require larger gaps than younger adults.",
+      "D1_context_alignment": "General direction matches the paper, but the alt text imports statistical conclusions from the local text rather than describing what is visible.",
+      "D2_conciseness": "Extremely long and repetitive. Numeric lists greatly reduce accessibility value.",
+      "D2_language_quality": "Grammatically fine but mechanical and table-like, not reader-oriented.",
+      "D2_imaginability": "Axes are described, but the overall comparison across panels and conditions is hard to grasp."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.35
+  },
+  {
+    "sample_id": "test_9",
+    "chart_type": "box plot_heat map",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 4,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 6,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Uses vague claims like “strong correlations” without specifying direction, conditions, or variation. This overstates what is visible in the heatmaps and collapses multiple patterns into an unsupported summary.",
+      "D1_completeness": "Misses major visible structure: differences between vertical vs. horizontal orientation, sensitivity to number of bars, aspect ratio effects, and score range differences across experiments. Blind readers miss the main comparative story.",
+      "D1_context_alignment": "Echoes local text selectively but omits critical qualifiers (e.g., when non-rotation is acceptable). Mentions “optimal” ranges without explaining uncertainty or distribution spread visible in box-plots.",
+      "D2_conciseness": "Length is reasonable, but space is wasted on repeating bandwidth ranges already stated in caption and local text instead of describing visual structure.",
+      "D2_language_quality": "Language is readable but imprecise. Phrases like “strong correlations” and quotation-marked “optimal” are not reader-oriented for accessibility.",
+      "D2_imaginability": "A blind reader cannot reconstruct panel B at all. Heatmaps are not spatially described (axes, color meaning, relative highs/lows). Panel structure (six heatmaps by condition) is completely lost."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "weak",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.15
+  },
+  {
+    "sample_id": "test_10",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 7,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 7,
+      "D2_language_quality": 6,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The chart is incorrectly described as a histogram instead of a grouped bar chart. The metric name “ERR” is used instead of EER. Claims about statistical significance are introduced without visual support.",
+      "D1_completeness": "All metrics and methods are mentioned, but the main visual insight is not clearly summarized. The contrast between FAR and the relatively stable EER and ISER is underdeveloped.",
+      "D1_context_alignment": "The description partially aligns with the caption but imports statistical conclusions from the local text rather than limiting itself to what is directly visible.",
+      "D2_conciseness": "The length is acceptable",
+      "D2_language_quality": "Language is readable but imprecise and informal. Phrases such as “look worse” and “most likely significantly” reduce clarity for blind or low-vision readers.",
+      "D2_imaginability": "The grouped bar structure is not clearly described, and relative ordering across methods is vague, limiting mental reconstruction of the chart."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.45
+  },
+  {
+    "sample_id": "test_11",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 4,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 2,
+      "D2_language_quality": 5,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Lists exact percentages and misassigns colors.",
+      "D1_completeness": "Focuses on values instead of stating the main visible pattern that audio dominates and visual is rare.",
+      "D1_context_alignment": "Direction matches caption and local text, but numeric detail and color mapping go beyond what authors state.",
+      "D2_conciseness": "Very long and dominated by numeric lists with low accessibility value.",
+      "D2_language_quality": "Grammatically understandable but mechanical and not reader-oriented.",
+      "D2_imaginability": "Structure is present, but the reader must parse long lists to understand the chart."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "incorrect",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "misaligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.55
+  },
+  {
+    "sample_id": "test_13",
+    "chart_type": "line chart_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 6,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 6,
+      "D2_language_quality": 6,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "General claims are correct.",
+      "D1_completeness": "Does not clearly describe the panel structure (V1 vs V2) or how differences appear across roll, pitch, and heave.",
+      "D1_context_alignment": "Broadly aligned with caption and local text, but overemphasizes implementation details instead of visual comparison.",
+      "D2_conciseness": "Reasonable length, but includes unnecessary algorithm description for alt text.",
+      "D2_language_quality": "Clear but slightly informal and explanatory rather than descriptive.",
+      "D2_imaginability": "Mentions variables but does not fully describe layout or time alignment across panels."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "aligned",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.6
+  },
+  {
+    "sample_id": "test_14",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 4,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 2,
+      "D2_language_quality": 5,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Lists exact percentages for every task and treats the chart as a data table rather than a chart.",
+      "D1_completeness": "Omits the main visible pattern that some tasks are consistently easier while spatial manipulation tasks are harder.",
+      "D1_context_alignment": "Numeric values align with the paper, but the alt text does not reflect the authors’ emphasis on task difficulty patterns.",
+      "D2_conciseness": "Very long numeric with low accessibility value.",
+      "D2_language_quality": "Clear but mechanical and list-like, not reader-oriented.",
+      "D2_imaginability": "Structure is understandable, but the list format makes it hard to form a clear mental picture."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "not covered",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.8
+  },
+  {
+    "sample_id": "test_15",
+    "chart_type": "dot plot_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 5,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 5,
+      "D2_language_quality": 5,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Uses compressed statements without clearly grounding them in both predictor categories; removed uncertainty shown by error bars.",
+      "D1_completeness": "Does not clearly explain the interaction structure or that effects differ by predictor type and scenario rather than being global effects.",
+      "D1_context_alignment": "Broadly consistent with caption and local text, but oversimplifies the interaction described by the authors.",
+      "D2_conciseness": "Very short,  which reduced clarity and completeness.",
+      "D2_language_quality": "Telegraphed phrasing reads like notes rather than reader-oriented alt text.",
+      "D2_imaginability": "Does not describe the two-panel layout or the use of points and error bars, limiting mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.35
+  },
+  {
+    "sample_id": "test_16",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 6,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 6,
+      "D2_language_quality": 6,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Counts for each UI element type are accurate and correctly ordered. Minor redundancy where “Text” is listed twice (once emphasized, once in the ordered list).",
+      "D1_completeness": "Lists all categories and values but misses the key insight stated in the paper: the strong imbalance and that the top four UI types dominate the dataset.",
+      "D1_context_alignment": "Consistent with caption and local text, but does not reflect the authors’ motivation for the figure (dataset bias and imbalance).",
+      "D2_conciseness": "Overly list-like. Enumerating every value reduces accessibility and increases cognitive load for blind readers.",
+      "D2_language_quality": "Clear and neutral, though slightly mechanical. Quotation mark before “Text” is unnecessary.",
+      "D2_imaginability": "A blind reader can reconstruct the ranking and relative dominance, but the long numeric list obscures the overall shape of the distribution."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "acceptable",
+        "L3": "acceptable",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "acceptable",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "acceptable",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.5
+  },
+  {
+    "sample_id": "test_17",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 7,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 6,
+      "D2_language_quality": 7,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Mentions specific task numbers and dominant codes that are not always clearly supported by the bar segments and color proportions.",
+      "D1_completeness": "Describes axes, codes, and several notable task patterns, but does not summarize the broader contrast between interpretive and generative tasks.",
+      "D1_context_alignment": "Consistent with the caption and local text, without adding unsupported interpretation.",
+      "D2_conciseness": "Lists many task-specific details, reducing efficiency for screen-reader users.",
+      "D2_language_quality": "Clear and neutral, but slightly repetitive when listing tasks and codes.",
+      "D2_imaginability": "Allows partial reconstruction of the stacked bars, but heavy listing limits a clear mental image of overall patterns."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7
+  },
+  {
+    "sample_id": "test_19",
+    "chart_type": "box plot_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 5,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 1,
+      "D2_language_quality": 4,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Reports exact quartiles, medians.some numbers are not obviously visible labeled.",
+      "D1_completeness": "Focuses on numeric detail but does not clearly state the main contrast between WRAT-L and WRAT-H groups.",
+      "D1_context_alignment": "Broadly aligned with caption and local text, but numeric emphasis distracts from the authors’ interpretation.",
+      "D2_conciseness": "Extremely long and dominated by numeric enumeration with low accessibility value.",
+      "D2_language_quality": "Grammatically correct but reads like a statistical report rather than alt text.",
+      "D2_imaginability": "Boxplot structure is implied, but excessive numbers obscure the visual comparison."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.1
+  },
+  {
+    "sample_id": "test_20",
+    "chart_type": "line chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 6,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 7
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Numeric values are approximate and generally consistent with the figure, but precise years and plateaus are oversimplified.",
+      "D1_completeness": "Describes each plot separately but does not explicitly highlight the contrasting trends as the main takeaway.",
+      "D1_context_alignment": "Aligned with caption and local text, but explaining is minimal.",
+      "D2_conciseness": "Reasonably concise, but could summarize trends more directly.",
+      "D2_language_quality": "Clear and academic language.",
+      "D2_imaginability": "Allows a general mental picture, but axes and scale relationships are not fully described."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "aligned",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.05
+  },
+  {
+    "sample_id": "test_21",
+    "chart_type": "bar chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 6,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 6,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Describes study structure correctly, but does not clarify that panel (b) excludes the NONE condition and that some scores are reversed.",
+      "D1_completeness": "Lists what is shown but does not summarize the main visible patterns across questions and conditions.",
+      "D1_context_alignment": "Aligned with caption, but relies on statistical terminology rather than visual interpretation.",
+      "D2_conciseness": "Reasonable length, but mostly structural description.",
+      "D2_language_quality": "Clear academic tone, but somewhat generic and note-like.",
+      "D2_imaginability": "Mentions bars and letters but does not help a blind reader imagine relative score patterns."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.35
+  },
+  {
+    "sample_id": "test_22",
+    "chart_type": "radar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 4,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 8,
+      "D2_language_quality": 7,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Mentions “teachers’ focus may change” without describing the actual plotted dimensions or confirming how many sessions are shown.",
+      "D1_completeness": "Does not name the five axes, does not explain that multiple polygons are overlaid, and omits how sessions are distinguished.",
+      "D1_context_alignment": "Loosely aligns with the idea of repeated sessions, but shifts toward interpretation rather than describing what is visible in the chart.",
+      "D2_conciseness": "Short, but brevity results from omitting essential chart structure.",
+      "D2_language_quality": "Clear language, but vague and abstract.",
+      "D2_imaginability": "A blind reader cannot reconstruct the radar layout, axes, or how sessions differ visually."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "partial",
+        "L4": "present (unsupported)"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "present (unsupported)"
+      }
+    },
+    "hq_cat_total": 5.5
+  },
+  {
+    "sample_id": "test_23",
+    "chart_type": "line chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 6,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "claims (“allows you to capture precise swipe information”) that are not directly visible in the chart and repeats authors’ conclusions instead of observable facts.",
+      "D1_completeness": "Mentions sensors but does not clearly describe time axis, shaded regions or the sequence of swipe directions.",
+      "D1_context_alignment": "Closely paraphrases caption and local text rather than describing what the plots show.",
+      "D2_conciseness": "Reasonable length, but includes explanatory claims not needed for chart description.",
+      "D2_language_quality": "Clear language.",
+      "D2_imaginability": "Gives a general sense of stacked plots, but a blind reader cannot fully reconstruct timing, axes, and alignment cues."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "present (unsupported)"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "present (unsupported)"
+      }
+    },
+    "hq_cat_total": 6.05
+  },
+  {
+    "sample_id": "test_25",
+    "chart_type": "heat map_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 3,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Describes a heat map correctly but incorrectly frames the recipient dimension just as “user” without detailing the multiple recipient categories shown.",
+      "D1_completeness": "Omits major patterns: low acceptability for banking/email across recipients and higher acceptability for close relations versus neighbors/visitors.",
+      "D1_context_alignment": "Aligned with caption but does not reflect the role of increasing acceptability highlighted in the text.",
+      "D2_conciseness": "Very brief at the cost of omitting information.",
+      "D2_language_quality": "Clear and neutral academic tone.",
+      "D2_imaginability": "Does not describe color scale meaning or the grid structure."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.35
+  },
+  {
+    "sample_id": "test_26",
+    "chart_type": "bar chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 6,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 8,
+      "D2_language_quality": 8,
+      "D2_imaginability": 8
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Percentages are correctly reported and group comparisons match the bars shown.",
+      "D1_completeness": "Lists values but does not explicitly emphasize the high contrast between SV and BVI across both panels as the main insight.",
+      "D1_context_alignment": "Aligned with caption, but does not reflect why groups differ.",
+      "D2_conciseness": "Clear and concise without unnecessary detail.",
+      "D2_language_quality": "Neutral, readable academic tone.",
+      "D2_imaginability": "Describes relative bar heights and contrasts sufficiently for mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.75
+  },
+  {
+    "sample_id": "test_27",
+    "chart_type": "tree map",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 5,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 6,
+      "D2_language_quality": 6,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Overall structure is correct, but the description of rectangle counts and hierarchy is imprecise and slightly confusing.",
+      "D1_completeness": "Does not clearly explain how intermediate classifier outputs combine to form the final eight gestures.",
+      "D1_context_alignment": "Aligned with caption and local text, but omits the note that all classifiers share the same network structure except output size.",
+      "D2_conciseness": "Some redundant phrasing about rectangles and pointers reduces clarity.",
+      "D2_language_quality": "Generally clear, awkward sequencing affect readability.",
+      "D2_imaginability": "Does not clearly convey left-to-right flow or distinguish dashed versus solid boxes for BLV readers."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.9
+  },
+  {
+    "sample_id": "test_28",
+    "chart_type": "bar chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 5,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 6,
+      "D2_language_quality": 7,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Incorrectly claims a right-column cumulative view, which is not shown in the figure.",
+      "D1_completeness": "Does not clearly state that mean accuracy is higher for nouns and that differences are small.",
+      "D1_context_alignment": "Mostly aligned with caption but omits that the difference between conditions is not statistically significant.",
+      "D2_conciseness": "Slightly verbose in structural description instead of summarizing results.",
+      "D2_language_quality": "Clear academic tone with small phrasing issues.",
+      "D2_imaginability": "Incoorect information (left column )make blv user confused. Does not clearly describe heights or the position of the mean line relative to the distribution."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6
+  },
+  {
+    "sample_id": "test_29",
+    "chart_type": "bar chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 7,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 8,
+      "D2_language_quality": 6,
+      "D2_imaginability": 7
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Reported response time values are approximately correct and match the chart. However, the text refers to medians without visual evidence and does not clarify that error bars are shown.",
+      "D1_completeness": "Both panels are described, but the key visual insight—that mobility condition has little effect compared to technique differences—is only weakly stated and not clearly summarized.",
+      "D1_context_alignment": "The description broadly aligns with the caption but partially imports conclusions from the analysis text (e.g., “best performance”) instead of limiting itself to visible comparisons.",
+      "D2_conciseness": "Length is reasonable, but phrasing is slightly redundant and could be more compact without losing information.",
+      "D2_language_quality": "Language is mostly clear but mixes descriptive and evaluative terms (“worst,” “best performance”), which reduces neutrality for accessibility purposes.",
+      "D2_imaginability": "A blind or low-vision reader can form a rough mental model of both bar charts, but relative ordering and panel structure could be described more explicitly."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7
+  },
+  {
+    "sample_id": "test_30",
+    "chart_type": "bar chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 6,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 3,
+      "D2_language_quality": 4,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Values and comparisons are correct; significance is reported accurately but without noting confidence intervals explicitly.",
+      "D1_completeness": "Focuses on listing exact means and significant pairs but does not summarize the main trend that throughput decreases with distance and is higher when known.",
+      "D1_context_alignment": "Consistent with caption and local text but omits the main purpose of charts.",
+      "D2_conciseness": "Overly detailed list of numeric values and pairwise tests reduces accessibility for BLV readers.",
+      "D2_language_quality": "Generally clear but repetitive phrasing and long sentences reduce readability.",
+      "D2_imaginability": "Mentions bars and groupings but does not clearly describe relative bar heights or visual structure across panels."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "missing"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.1
+  },
+  {
+    "sample_id": "test_31",
+    "chart_type": "line chart_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 7,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": null,
+      "D1_completeness": "Highlights best and worst UI types but does not summarize the overall pattern across all 13 panels.",
+      "D1_context_alignment": "Consistent with the caption’s goal of threshold selection, but does not explicitly state that thresholds are chosen per UI type.",
+      "D2_conciseness": "Slight redundancy in explaining what PR curves represent.",
+      "D2_language_quality": "Clear, neutral language with small grammatical issues.",
+      "D2_imaginability": "Panel layout and axis ranges are not clearly described for mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "incorrect"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.45
+  },
+  {
+    "sample_id": "test_32",
+    "chart_type": "bar chart_line chart",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 6,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 6,
+      "D2_language_quality": 7,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correctly describes chart structure and categories but incorrectly implies meaning from number of data points rather than explaining the trend shown.",
+      "D1_completeness": "Does not summarize the main takeaway that LoD decreases faster for proficient users and that novices account for most LoD increases.",
+      "D1_context_alignment": "Generally aligned with caption, but misses the interpretation .",
+      "D2_conciseness": "Reasonably concise but includes structural details that could be replaced with summary insights.",
+      "D2_language_quality": "Clear academic tone with minor awkward phrasing.",
+      "D2_imaginability": "Does not clearly describe relative bar heights or the magnitude differences between novice and proficient users."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "partial"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.9
+  },
+  {
+    "sample_id": "test_33",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 4,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 6,
+      "D2_language_quality": 7,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correct overall description, but does not state total counts or clearly distinguish templates vs. examples numerically.",
+      "D1_completeness": "Misses the main takeaway that most examples are covered by relatively few templates and that only a small subset is skipped.",
+      "D1_context_alignment": "Generally aligned with caption but does not mention the stated compression or rationale for skipping examples.",
+      "D2_conciseness": "Slightly verbose in structural description instead of summarizing patterns.",
+      "D2_language_quality": "Clear, neutral language with minor awkward phrasing.",
+      "D2_imaginability": "Does not clearly describe relative bar heights or the left-to-right layout for mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "missing"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "missing"
+      }
+    },
+    "hq_cat_total": 5.8
+  },
+  {
+    "sample_id": "test_34",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 4,
+      "D1_completeness": 3,
+      "D1_context_alignment": 3,
+      "D2_conciseness": 6,
+      "D2_language_quality": 7,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Describes the figure only as an action spectrum without noting the comparison between multiple light sources or axes.",
+      "D1_completeness": "Omits the key comparison showing concentrated blue-light peaks versus broad daylight spectra and the approximate 470 nm peak.",
+      "D1_context_alignment": "Aligned with caption but very not informatic",
+      "D2_conciseness": "Very short, but at the cost of necessary detail.",
+      "D2_language_quality": "Clear wording, but vague and generic.",
+      "D2_imaginability": "Does not allow a blind reader to form a mental image of curves, peaks, or shaded regions."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "partial"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 3.95
+  },
+  {
+    "sample_id": "test_35",
+    "chart_type": "box plot_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 6,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 6,
+      "D2_language_quality": 7,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Numerical quartiles and medians are largely accurate, with no clear factual contradictions.",
+      "D1_completeness": "Focuses heavily on quartile values but does not summarize the overall Easy vs. Hard pattern across all four metrics.",
+      "D1_context_alignment": "Consistent with the caption, but does not reflect the broader interpretation in the local text about performance differences.",
+      "D2_conciseness": "Overly detailed numeric descriptions reduce accessibility and information density.",
+      "D2_language_quality": "Clear and neutral tone with minor awkward phrasing.",
+      "D2_imaginability": "Describes quartiles clearly but does not fully convey relative box sizes or outliers across panels."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "missing"
+      }
+    },
+    "hq_cat_total": 7.05
+  },
+  {
+    "sample_id": "test_36",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 5,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 8,
+      "D2_language_quality": 7,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correct general trends, but uses vague terms like “larger” and “smoother” without mentioning to observable differences between specific hair lengths.",
+      "D1_completeness": "Does not mention multiple curves or how short and long hair differ across distances.",
+      "D1_context_alignment": "Aligned with caption but does not reflect the experimental purpose of comparing reproducibility across hair lengths.",
+      "D2_conciseness": "Very concise, but at the cost of important descriptive detail.",
+      "D2_language_quality": "Clear but overly generic phrasing reduces precision.",
+      "D2_imaginability": "Does not describe axes, line separation, or approximate force ranges, limiting mental reconstruction for BLV readers."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.35
+  },
+  {
+    "sample_id": "test_37",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 5,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 6,
+      "D2_language_quality": 7,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correctly identifies chart type and scale but does not explicitly mention the displayed mean and standard deviation values.",
+      "D1_completeness": "Describes structure but does not summarize which questions show stronger versus weaker perceived distraction patterns.",
+      "D1_context_alignment": "Aligned with caption but does not reflect the authors’ conclusion that effects are generally moderate.",
+      "D2_conciseness": "Slightly verbose in describing scale mechanics instead of summarizing response distributions.",
+      "D2_language_quality": "Clear and neutral, with minor awkward phrasing.",
+      "D2_imaginability": "Does not clearly describe relative segment sizes across questions for mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6
+  },
+  {
+    "sample_id": "test_38",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 7,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 7
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Trend directions are correct, but precise peak timing are vague and not anchored to specific years or values.",
+      "D1_completeness": "Mentions individual trends but does not clearly state the shared turning point after the mid-2000s or the convergence toward lower values.",
+      "D1_context_alignment": "Generally aligned with caption but omits the interpretation that lower values indicate greater homogeneity.",
+      "D2_conciseness": "Reasonably concise, though some repetition across feature descriptions.",
+      "D2_language_quality": "Clear and neutral academic tone.",
+      "D2_imaginability": "Does not clearly describe relative spread of confidence intervals or which line fluctuates most."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "missing"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "missing"
+      }
+    },
+    "hq_cat_total": 7.25
+  },
+  {
+    "sample_id": "test_39",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 6,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Describes logistic regression correctly but omits the direction of the x-axis .",
+      "D1_completeness": "Does not mention the clustering of curves or the shared midpoint around 40 ms that motivates the chosen timing.",
+      "D1_context_alignment": "Aligned with caption but does not reflect the conclusion that 40 ms preserves agency for most participants.",
+      "D2_conciseness": "Concise but leaves out key descriptive detail needed for accessibility.",
+      "D2_language_quality": "Clear and neutral academic tone.",
+      "D2_imaginability": "Does not describe curve shape, overlap, or axis orientation sufficiently for mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not presenzt"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "missing"
+      }
+    },
+    "hq_cat_total": 6.9
+  },
+  {
+    "sample_id": "test_40",
+    "chart_type": "bar chart_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 6,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Structural description is correct, but some claims rely on general impressions rather than explicit values shown in the chart.",
+      "D1_completeness": "Does not clearly summarize the main quantitative differences between 2018 and 2020 or between specific sub-categories.",
+      "D1_context_alignment": "Aligned with caption and local text, but does not state the key conclusion that nationality is mentioned far less frequently overall.",
+      "D2_conciseness": "Some redundancy in describing chart layout rather than summarizing patterns.",
+      "D2_language_quality": "Clear and neutral tone.",
+      "D2_imaginability": "Does not clearly convey relative bar lengths or which sub-categories dominate within each cluster."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7
+  },
+  {
+    "sample_id": "test_42",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 8,
+      "D1_context_alignment": 9,
+      "D2_conciseness": 8,
+      "D2_language_quality": 8,
+      "D2_imaginability": 8
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correct axes, trends, and relative durations; time ranges are approximate but consistent with the figure and text.",
+      "D1_completeness": "Captures all three conditions and the key comparison that intensive use drains fastest.",
+      "D1_context_alignment": "Aligned with caption and local",
+      "D2_conciseness": "Concise and focused on observable trends.",
+      "D2_language_quality": "Clear, neutral academic tone.",
+      "D2_imaginability": "Describes line styles, slopes, and approximate endpoints clearly for mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "missing"
+      }
+    },
+    "hq_cat_total": 8.45
+  },
+  {
+    "sample_id": "test_43",
+    "chart_type": "dot plot_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 8,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 7
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Percentages and direction of effects are correct, but the right panel is described as a box-and-whisker plot rather than a dot-based proportion plot.",
+      "D1_completeness": "Captures the main comparison but does not clearly state that the correct explanation is the top-listed option in the right panel.",
+      "D1_context_alignment": "Well aligned with caption and local text, including the focus on resolving Simpson’s paradox.",
+      "D2_conciseness": "Slight redundancy in restating the experimental comparison.",
+      "D2_language_quality": "Clear, neutral academic tone with good readability.",
+      "D2_imaginability": "Gives a reasonable sense of layout, but ordering of response options could be clearer."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "missing"
+      }
+    },
+    "hq_cat_total": 7.8
+  },
+  {
+    "sample_id": "test_44",
+    "chart_type": "dot plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 7,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 7
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correctly identifies the main pattern, but states “about equal in all cases” without noting visible variation across some interaction types.",
+      "D1_completeness": "Captures the key insight about the static vs. hover difference for high SA, but does not summarize overall performance ordering.",
+      "D1_context_alignment": "Aligned with caption and local text, including the emphasis on statistically significant differences for high SA participants.",
+      "D2_conciseness": "Mostly concise, but includes a broad generalization that slightly oversimplifies the pattern.",
+      "D2_language_quality": "Clear, neutral academic tone.",
+      "D2_imaginability": "Describes dot and interval layout, though relative magnitudes across all interactions could be clearer.also didn´t mentioned to x axis and y axis clearly. So imagining that is not totally easy"
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.3
+  },
+  {
+    "sample_id": "test_45",
+    "chart_type": "bar chart_line chart",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 4,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 6,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Mislabels axes in (c) as x-axis instead of y-axes; no confirmation of metric ranges or values.",
+      "D1_completeness": "Omits all numerical values, relative differences, and main trends across panels.",
+      "D1_context_alignment": "Does not contradict caption , but fails to reflect stated findings such as male advantage and sentence-level superiority.",
+      "D2_conciseness": "Brief but overly generic, with low information density.",
+      "D2_language_quality": "repetitive structure.",
+      "D2_imaginability": "Provides almost no visual structure, ordering, or comparative cues for a BLV reader."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.4
+  },
+  {
+    "sample_id": "test_46",
+    "chart_type": "bar chart_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 5,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 1,
+      "D2_language_quality": 5,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Lists many exact percentages; risk of transcription errors and unnecessary precision for BLV users.",
+      "D1_completeness": "Overemphasizes raw percentages; does not clearly summarize dominant patterns across panels.",
+      "D1_context_alignment": "Consistent with caption and local text (high comfort overall; rental apartment most frequent use).",
+      "D2_conciseness": "Excessively long; enumerates percentages instead of summarizing patterns.",
+      "D2_language_quality": "Clear but repetitive; minor spelling issues.",
+      "D2_imaginability": "Conveys structure, but stacking and dominant segments are hard to reconstruct from numbers alone."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.5
+  },
+  {
+    "sample_id": "test_47",
+    "chart_type": "bar chart_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 4,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 6,
+      "D2_language_quality": 7,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correct chart type and question set; lacks specific proportions but avoids inventing numbers.",
+      "D1_completeness": "Describes structure but does not summarize directional differences between conditions.",
+      "D1_context_alignment": "Aligned with caption focus on experience questions; does not reflect analytic findings noted in local text.",
+      "D2_conciseness": "Reasonably concise but generic.",
+      "D2_language_quality": "Clear, neutral tone; minor awkward phrasing.",
+      "D2_imaginability": "Does not convey segment sizes or dominant responses per panel."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.7
+  },
+  {
+    "sample_id": "test_49",
+    "chart_type": "dot plot_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 4,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 6,
+      "D2_language_quality": 6,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Describes the chart without specifying direction or magnitude; omits several evaluated codes (Interest, Clarity).",
+      "D1_completeness": "Focuses on structure but fails to summarize which codes show higher agreement or systematic evaluator differences.",
+      "D1_context_alignment": "Partially aligned with caption; does not reflect key findings about agreement levels or feedback effects described in the text.",
+      "D2_conciseness": "Concise but too shallow to support understanding for BLV readers.",
+      "D2_language_quality": "Clear wording but vague phrasing (“discrepancy”) weakens precision.",
+      "D2_imaginability": "Does not convey panel layout, evaluator comparison, or patterns clearly."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.05
+  },
+  {
+    "sample_id": "test_50",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 4,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 6,
+      "D2_language_quality": 4,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The description is vague and partially incorrect. It states that the lines increase “towards to left,” which is directionally wrong. The crossing point is mentioned but unfinished and unclear. No reference to axes meaning or scale.",
+      "D1_completeness": "The main visual insight is not clearly expressed. The relative slopes, different growth rates, and approximate crossing location are not described in a usable way. Regression lines and strength of linear trends are completely omitted.",
+      "D1_context_alignment": "The alt text does not contradict the caption but fails to reflect the paper’s stated comparison focus. It avoids interpretation but also fails to describe the visually evident crossover that motivates the discussion in the local text.",
+      "D2_conciseness": "Very short but not efficient. Brevity comes at the cost of meaning. The sentence structure wastes words while conveying little usable information.",
+      "D2_language_quality": "Grammatically poor and fragmented (“towards to left,” “crosses it towards to and”). This significantly reduces accessibility and reader confidence.",
+      "D2_imaginability": "A blind or low-vision reader cannot reconstruct the chart. Axes ranges, approximate values, slope differences, and crossing location are not described in a coherent way."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.3
+  },
+  {
+    "sample_id": "test_51",
+    "chart_type": "box plot_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 4,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 4,
+      "D2_language_quality": 6,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Median values are correct, but some significance listings are hard to verify visually",
+      "D1_completeness": "Lists medians and tests but fails to summarize overall patterns (low vs. high effort/frustration groups).",
+      "D1_context_alignment": "Consistent with caption but does not explain scale meaning (lower is better).",
+      "D2_conciseness": "Overloaded with pairwise significance listings that reduce clarity.",
+      "D2_language_quality": "Neutral tone, but compressed notation reduces readability for BLV users.",
+      "D2_imaginability": "Boxplot structure, spreads, and relative positions are not described."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.9
+  },
+  {
+    "sample_id": "test_52",
+    "chart_type": "line chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 6,
+      "D1_context_alignment": 9,
+      "D2_conciseness": 8,
+      "D2_language_quality": 7,
+      "D2_imaginability": 7
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Facts align with the figure.",
+      "D1_completeness": "Does not clearly explain the conceptual takeaway of each panel or the uncertainty indicated by the question mark.",
+      "D1_context_alignment": "Aligned with caption and local text.",
+      "D2_conciseness": "Could describe curves across panels better.",
+      "D2_language_quality": "Informal phrasing and spelling errors (“doted”) reduce clarity for screen-reader users.",
+      "D2_imaginability": "Panel structure is described, but spatial arrangement and comparative shapes are not clear enough."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.75
+  },
+  {
+    "sample_id": "test_53",
+    "chart_type": "dot plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 6,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 9,
+      "D2_language_quality": 7,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correctly identifies two distributions and the general rise and fall. Uses approximate ranges rather than exact counts, but no incorrect claims are made.",
+      "D1_completeness": "Omits the most important visible insight: that over 90% of distances fall below roughly 21 units. The long tail is mentioned, but the concentration of values is not.",
+      "D1_context_alignment": "Consistent with the local text and does not contradict it. However, it fails to reflect the authors’ framing of similarity between simulations for most cases.",
+      "D2_conciseness": "Reasonably concise and avoids excessive listing.",
+      "D2_language_quality": "Generally clear, but slightly mechanical. Minor grammatical issues.",
+      "D2_imaginability": "Describes overall shape and tail length, but does not distinguish how protan and deutan differ in peak height or tail extent. Mental reconstruction is partial."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "acceptable",
+        "L3": "acceptable",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "acceptable",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.35
+  },
+  {
+    "sample_id": "test_54",
+    "chart_type": "dot plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 5,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Incorrectly states “three absolute rankings” and omits rating level 1; counts partially inconsistent with figure legend.",
+      "D1_completeness": "Does not explain the full 1–4 scale layout, color meanings, or per-row total of 24 items.",
+      "D1_context_alignment": "Broad conclusions align with caption, but wording simplifies and slightly distorts reported outcomes.",
+      "D2_conciseness": "Reasonably concise but uses vague summary rather than structure.",
+      "D2_language_quality": "minor grammatical issues.",
+      "D2_imaginability": "Insufficient spatial description for reconstructing rows, columns, and color encoding."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "partial",
+        "L4": "missing"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "missing"
+      }
+    },
+    "hq_cat_total": 6.05
+  },
+  {
+    "sample_id": "test_56",
+    "chart_type": "radar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 4,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 8,
+      "D2_language_quality": 8,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Original alt text does not describe the axes, values, or shapes of the radar chart and implies functionality rather than observed data.",
+      "D1_completeness": "Omits what dimensions are shown and how current and previous sessions differ in the chart.",
+      "D1_context_alignment": "Aligns with caption about current vs. previous sessions but shifts focus to interface controls instead of the visualization.",
+      "D2_conciseness": "Short, but brevity comes at the cost of missing chart content.",
+      "D2_language_quality": "Clear and neutral language, but generic and interface-oriented.",
+      "D2_imaginability": "A blind reader cannot reconstruct the radar shape, axes, or relative magnitudes."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.8
+  },
+  {
+    "sample_id": "test_57",
+    "chart_type": "scatter plot_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 6,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 8,
+      "D2_language_quality": 8,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Numeric ranges are approximate but consistent with the plotted fit lines; no false claims.",
+      "D1_completeness": "Does not state overlap differences across tasks or note varying y-axis ranges across panels.",
+      "D1_context_alignment": "Aligns with caption and local text on age effects and group differences, without adding unsupported interpretation.",
+      "D2_conciseness": "Long but acceptable for a four-panel figure; some repetition across tasks.",
+      "D2_language_quality": "Clear, neutral, and readable; slightly repetitive phrasing.",
+      "D2_imaginability": "Describes trends but does not fully support mental reconstruction of slopes across all panels."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.55
+  },
+  {
+    "sample_id": "test_58",
+    "chart_type": "bar chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 5,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 6,
+      "D2_language_quality": 6,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Numerical values mostly correct; omits units for NASA-TLX subscales and ignores variability/error bars.",
+      "D1_completeness": "Does not describe trends across conditions or differences between cold vs. hot and module counts; ignores most NASA-TLX dimensions.",
+      "D1_context_alignment": "Aligned with caption at a high level, but fails to reflect reported workload differences across subscales.",
+      "D2_conciseness": "Dense listing of numbers reduces clarity and efficiency.",
+      "D2_language_quality": "Neutral tone, but repetitive structure and minimal framing.",
+      "D2_imaginability": "Limited description of chart layout, grouping, and comparison cues for BLV readers."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "missing"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "missing"
+      }
+    },
+    "hq_cat_total": 6
+  },
+  {
+    "sample_id": "test_59",
+    "chart_type": "line chart_point plot",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 4,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 5,
+      "D2_language_quality": 6,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Overly exact numeric reporting without units; does not mention confidence intervals or visual uncertainty; no errors but precision exceeds visual necessity.",
+      "D1_completeness": "Lists values and pairwise tests but fails to summarize overall trends or patterns across panels.",
+      "D1_context_alignment": "Aligned with caption and local text; however, statistical emphasis dominates over visual message.",
+      "D2_conciseness": "Excessively long list of pairwise comparisons; low information efficiency.",
+      "D2_language_quality": "Technically correct but mechanical and difficult to follow for BLV readers.",
+      "D2_imaginability": "Poor visual reconstruction: panel layout, directions of change, and spatial ordering are unclear."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.75
+  },
+  {
+    "sample_id": "test_60",
+    "chart_type": "heat map_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 3,
+      "D1_completeness": 4,
+      "D1_context_alignment": 4,
+      "D2_conciseness": 8,
+      "D2_language_quality": 7,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Claims “significantly different” patterns without statistical evidence visible in the chart and does not describe the color meaning or structure of the heat maps.",
+      "D1_completeness": "Omits legend meaning, gesture labels, sensor layout, and how panels are organized, leaving key visual information unexplained.",
+      "D1_context_alignment": "Repeats caption text but does not give extra information",
+      "D2_conciseness": "Short and direct, but brevity comes from leaving out essential content.",
+      "D2_language_quality": "Clear wording, but evaluative phrasing replaces descriptive explanation.",
+      "D2_imaginability": "A blind reader cannot reconstruct the grid layout, gesture set, or color encoding from the description."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "incorrect",
+        "L3": "missing",
+        "L4": "present (unsupported)"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.35
+  },
+  {
+    "sample_id": "test_61",
+    "chart_type": "pie chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 9,
+      "D1_context_alignment": 9,
+      "D2_conciseness": 9,
+      "D2_language_quality": 9,
+      "D2_imaginability": 9
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Accurately reports percentages; avoids unsupported ratios or counts.",
+      "D1_completeness": "Includes all categories and clearly identifies the dominant preference.",
+      "D1_context_alignment": "Fully aligns with caption; does not add paper-level interpretation beyond the visual.",
+      "D2_conciseness": "Efficient length for a simple pie chart.",
+      "D2_language_quality": "Clear, neutral, and accessible wording.",
+      "D2_imaginability": "Relative slice sizes are clear;"
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 9
+  },
+  {
+    "sample_id": "test_62",
+    "chart_type": "bar chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 3,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 3,
+      "D2_language_quality": 5,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Participant-feature mappings are mostly correct, but listing no comparisons.",
+      "D1_completeness": "Does not summarize which features are most or least used or desired, and omits the overall contrast between panels.",
+      "D1_context_alignment": "Aligned with caption at a listing level, but ignores the stated gap between used and desired features.",
+      "D2_conciseness": "Long listing of participant IDs reduce clarity and accessibility for BLV readers.",
+      "D2_language_quality": "Inconsistent grammar and punctuation, with unclear sentence boundaries.",
+      "D2_imaginability": "Does not describe bar lengths, ordering, or relative magnitudes, limiting mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.7
+  },
+  {
+    "sample_id": "test_63",
+    "chart_type": "scatter plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 4,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 4,
+      "D2_language_quality": 6,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Mentions three regression lines but does not clearly map them to categories; numerical values are correct but correlation are not fully covered.",
+      "D1_completeness": "Lists all means but does not summarize main patterns such as clustering of behavioral vs. visual attributes or the overall trend.",
+      "D1_context_alignment": "Generally aligned with caption and local text.",
+      "D2_conciseness": "Overly long list of raw numbers reduces accessibility and information density for BLV readers.",
+      "D2_language_quality": "Grammar and phrasing are uneven, with awkward constructions and repetition.",
+      "D2_imaginability": "positioning of points are not described, hard to mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.4
+  },
+  {
+    "sample_id": "test_64",
+    "chart_type": "dot plot_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 3,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Claims a general result without describing the two plotted conditions, time span, or participant-wise structure; overgeneralizes without visual support per participant.",
+      "D1_completeness": "Omits axes, weeks, participant panels, and variability over time; does not explain differences across participants.",
+      "D1_context_alignment": "Aligns with the paper’s claim directionally, but the alt text reads like a conclusion rather than a description of the figure.",
+      "D2_conciseness": "Very short, but brevity comes from skipping essential chart content.",
+      "D2_language_quality": "Clear sentence, but phrased as an interpretive claim rather than descriptive alt text.",
+      "D2_imaginability": "A blind reader cannot reconstruct the layout, multiple panels, time axis, or comparison lines."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "present (unsupported)"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "present (unsupported)"
+      }
+    },
+    "hq_cat_total": 4.8
+  },
+  {
+    "sample_id": "test_65",
+    "chart_type": "heat map_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 2,
+      "D1_context_alignment": 5,
+      "D2_conciseness": 0,
+      "D2_language_quality": 3,
+      "D2_imaginability": 0
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Listed numbers are correct. But it seems it is a table rather than a chart.",
+      "D1_completeness": "Fails to explain the heatmap structure, color scale, conditions, or main patterns; overwhelms with numbers instead of summarizing trends.",
+      "D1_context_alignment": "aligns with the study question but imports paper-level conclusions and participant narratives rather than describing what is visible.",
+      "D2_conciseness": "Extremely long and unusable for screen readers.",
+      "D2_language_quality": "Grammatically inconsistent, repetitive, and difficult to follow due to exhaustive numeric listing.",
+      "D2_imaginability": "A blind reader cannot reconstruct the heatmap layout, axes, or color meaning from the description."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "present (unsupported)"
+      },
+      "D1_completeness": {
+        "L1": "missing",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "present (unsupported)"
+      }
+    },
+    "hq_cat_total": 3.55
+  },
+  {
+    "sample_id": "test_66",
+    "chart_type": "bar chart_line chart",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 2,
+      "D1_context_alignment": 1,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correctly identifies chart elements but does not specify axis ranges or distribution shape.",
+      "D1_completeness": "Omits where most participants are concentrated and the overall spread of MMR values.",
+      "D1_context_alignment": "Just repeat of the caption .\ndoes not give more information about the chart",
+      "D2_conciseness": "Very short but sacrifices necessary informational content.",
+      "D2_language_quality": "Clear and neutral language with no issues.",
+      "D2_imaginability": "Provides almost no visual or spatial detail for mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 3.55
+  },
+  {
+    "sample_id": "test_68",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 4,
+      "D1_completeness": 5,
+      "D1_context_alignment": 5,
+      "D2_conciseness": 7,
+      "D2_language_quality": 4,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Invents claims about speed (“fastest”) not shown in the chart; misnames BrailleType as BrailleTouch; spelling errors",
+      "D1_completeness": "Does not report approximate values, uncertainty (error bars), or overall accuracy ordering clearly.",
+      "D1_context_alignment": "imports conclusions from the paper rather than describing what is visible and using the wrong method name.",
+      "D2_conciseness": "Short, but unclear due to errors and redundancy.",
+      "D2_language_quality": "Grammar and spelling errors (“collum,” sentence fragments) reduce clarity.",
+      "D2_imaginability": "Does not describe bar layout, scale, or error bars, limiting mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "incorrect",
+        "L4": "invented"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "partial",
+        "L4": "missing"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "incorrect",
+        "L4": "invented"
+      }
+    },
+    "hq_cat_total": 4.65
+  },
+  {
+    "sample_id": "test_70",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 7,
+      "D1_context_alignment": 9,
+      "D2_conciseness": 8,
+      "D2_language_quality": 7,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The relative differences between spatial-ability groups across methods are described correctly. No numeric values are invented.",
+      "D1_completeness": "The main insight (large gap for QWERTY/MultiTap, little gap for NavTouch/BrailleType) is captured, but the overall downward trend across methods is not mentioned.",
+      "D1_context_alignment": "The description aligns well with the caption and local statistical analysis.",
+      "D2_conciseness": "Concise and focused on the main comparison.",
+      "D2_language_quality": "Generally clear, though phrasing such as “the difference … is big” is informal.",
+      "D2_imaginability": "A BLV reader can grasp relative differences but not the approximate WPM levels or the consistent decline across methods."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.9
+  },
+  {
+    "sample_id": "test_72",
+    "chart_type": "line chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 6,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 8,
+      "D2_language_quality": 8,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The overall trends are described correctly, but the test accuracy for the vision model is imprecisely stated and key numeric values are vague.",
+      "D1_completeness": "The alt text mentions plateaus but does not clearly compare the two models or highlight overfitting as a shared pattern.",
+      "D1_context_alignment": "The description aligns with the caption and local text and does not contradict the reported results.",
+      "D2_conciseness": "Reasonably concise, but some wording is repetitive and informal.",
+      "D2_language_quality": "Generally clear, but phrasing such as “maxes out” is informal and less precise for academic alt text.",
+      "D2_imaginability": "A BLV reader cannot easily visualize the size of the train–test gap or the relative performance difference between models."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.3
+  },
+  {
+    "sample_id": "test_73",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 7,
+      "D1_context_alignment": 9,
+      "D2_conciseness": 9,
+      "D2_language_quality": 7,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The ordering of menu sizes, directions, and distances is described correctly. No values are invented.",
+      "D1_completeness": "The main trends are described, but the presence of error bars and their meaning are not mentioned, and interactions are not summarized.",
+      "D1_context_alignment": "The description aligns with the caption and statistical results in the local text.",
+      "D2_conciseness": "Concise and focused on visible comparisons.",
+      "D2_language_quality": "Generally clear, but phrasing such as “fastest than” is grammatically incorrect.",
+      "D2_imaginability": "A BLV reader can understand ordering but not the relative magnitudes or grouping structure of the bars."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 8
+  },
+  {
+    "sample_id": "test_74",
+    "chart_type": "density plot_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 3,
+      "D1_context_alignment": 5,
+      "D2_conciseness": 6,
+      "D2_language_quality": 8,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The statement is factually correct but extremely minimal. No incorrect claims are made,but in the cost of giving no precise information",
+      "D1_completeness": "The alt text does not describe the two conditions, distribution shapes, overlap, or skewness, which are the primary visual insights of the figure.",
+      "D1_context_alignment": "The description does not contradict the caption or local text, but it ignores the key patterns discussed there.",
+      "D2_conciseness": "Very concise, but brevity comes at the cost of usability for BLV readers.",
+      "D2_language_quality": "Clear and neutral language, but underspecified.",
+      "D2_imaginability": "A blind or low-vision reader cannot form a mental image of the distributions or how the two conditions compare."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "not present",
+        "L3": "not present",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partially covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "not present",
+        "L3": "not present",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.8
+  },
+  {
+    "sample_id": "test_75",
+    "chart_type": "line chart_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 3,
+      "D1_context_alignment": 4,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The description mischaracterizes the plotted lines: preference and error rate are not confidence intervals.  No specific information is given.",
+      "D1_completeness": "The alt text does not describe angle patterns, differences across tasks, or relationships between time, error, and preference, which are the core visual insights.",
+      "D1_context_alignment": "The description does not align with the findings discussed in the local text and obscures the intended design implications.",
+      "D2_conciseness": "Brief, but oversimplified to the point of being misleading.",
+      "D2_language_quality": "Neutral tone, but vague and imprecise terminology.",
+      "D2_imaginability": "A blind or low-vision reader cannot reconstruct the multi-panel structure or angle-dependent trends."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partially covered",
+        "L2": "incorrect",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partially covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "partially covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.4
+  },
+  {
+    "sample_id": "test_76",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 2,
+      "D1_context_alignment": 5,
+      "D2_conciseness": 8,
+      "D2_language_quality": 8,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The description is broadly correct but does not specify the unit correctly (the chart shows seconds, not milliseconds).also descpription is so generic without informative information.",
+      "D1_completeness": "The alt text does not describe task differences, loading methods, network conditions, or the main performance patterns visible in the chart.",
+      "D1_context_alignment": "The description does not contradict the caption or results, but it fails to reflect the hypotheses and findings discussed in the local text.",
+      "D2_conciseness": "Very concise, but overly generic.",
+      "D2_language_quality": "Clear and neutral language, but underspecified.",
+      "D2_imaginability": "A blind or low-vision reader cannot infer how completion time changes across tasks or conditions."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partially covered",
+        "L2": "covered",
+        "L3": "not present",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partially covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.8
+  },
+  {
+    "sample_id": "test_77",
+    "chart_type": "bar chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 3,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 8,
+      "D2_language_quality": 8,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The description of pre/post means, groups, dimensions, and error bars is correct. No values are invented, but in the cost of no specified information is given.",
+      "D1_completeness": "The alt text does not describe any visible differences between groups or changes from pre to post, which are the main purpose of the chart.",
+      "D1_context_alignment": "The description is consistent with the caption and analysis but does not reflect the comparative focus implied by the ANOVA.",
+      "D2_conciseness": "Concise and readable, but overly generic.",
+      "D2_language_quality": "Clear, neutral academic language.",
+      "D2_imaginability": "A blind or low-vision reader cannot form a mental picture of how groups differ or which dimensions change over time."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "missing",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.1
+  },
+  {
+    "sample_id": "test_78",
+    "chart_type": "scatter plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 8,
+      "D1_context_alignment": 10,
+      "D2_conciseness": 6,
+      "D2_language_quality": 8,
+      "D2_imaginability": 9
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The regression equation and p-value are stated, but these are not visually inferable from the chart alone and rely on external statistical text.",
+      "D1_completeness": "Key patterns and notable outliers are well described, though the overall clustering pattern could be summarized more.",
+      "D1_context_alignment": "The description aligns closely with the caption and local text discussion.",
+      "D2_conciseness": "The alt text is long and includes statistical detail that is not strictly necessary for accessibility.",
+      "D2_language_quality": "Clear and academic tone, though slightly verbose.",
+      "D2_imaginability": "A BLV reader can form a clear mental image of the scatter, point sizes, trend, and outliers."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "overstated"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "partially present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "covered"
+      }
+    },
+    "hq_cat_total": 8.05
+  },
+  {
+    "sample_id": "test_79",
+    "chart_type": "scatter plot_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 2,
+      "D1_context_alignment": 4,
+      "D2_conciseness": 6,
+      "D2_language_quality": 6,
+      "D2_imaginability": 1
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The description of axes and conditions is broadly correct. However, calling these “heat maps” without explaining color meaning or density is incomplete, and the text does not clearly distinguish between scatter plots and aggregated heat representations.",
+      "D1_completeness": "Completely misses the main visible findings: strong left/right separation, clustering around workspace centers, and differences between fixed and floating conditions. A blind reader learns structure but no insight.",
+      "D1_context_alignment": "Does not contradict the paper, but fails to align with its purpose. The alt text ignores the central argument about personal digital space and side-based targeting emphasized in the local text.",
+      "D2_conciseness": "Not long, but inefficient. Uses space to restate layout instead of conveying meaning.",
+      "D2_language_quality": "Reads like a draft note, not polished alt text.",
+      "D2_imaginability": "A blind reader cannot imagine the figure at all. No description of color groups, spatial separation, clustering, or relative density. The visualization is functionally invisible."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "acceptable",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.1
+  },
+  {
+    "sample_id": "test_80",
+    "chart_type": "heat map_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 5,
+      "D1_context_alignment": 2,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Just repeating caption. No unsupported statistics are stated, in the cost of no specific information is given.",
+      "D1_completeness": "The alt text does not describe the spatial patterns or polarity differences that distinguish correct and incorrect trials, which are the main visual message.",
+      "D1_context_alignment": "Alt text is repetition of caption, without giving any extra information of the chart.",
+      "D2_conciseness": "Concise and clear, but brevity limits interpretive usefulness for BLV readers.",
+      "D2_language_quality": "Neutral and academic tone, appropriate for alt text.",
+      "D2_imaginability": "A BLV reader cannot reconstruct where on the scalp activity differs or how polarity changes across conditions."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 4.9
+  },
+  {
+    "sample_id": "test_81",
+    "chart_type": "timeline_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 3,
+      "D1_context_alignment": 3,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The description of the averaged signals and the two vertical event markers is accurate. No unsupported interpretations are stated in the cost of very generic alt text, with no specific information.",
+      "D1_completeness": "The presence of two conditions (correct vs. incorrect) and their relative behavior around the event is not described, which is central to the chart’s purpose.",
+      "D1_context_alignment": "The alt text is repeat of the caption and don´t cover visually apparent contrasts emphasized in the figure.",
+      "D2_conciseness": "Concise and focused, though brevity removes important visual distinctions.",
+      "D2_language_quality": "Language is clear and neutral, appropriate for an academic alt text.",
+      "D2_imaginability": "A BLV reader cannot clearly reconstruct the waveform shapes or how correct and incorrect traces differ near the event markers."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partially covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5
+  },
+  {
+    "sample_id": "test_82",
+    "chart_type": "scatter plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 3,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The encodings for axes and bubble size are correctly identified. No incorrect values or trends are stated, but in the cost of no specific information is given.",
+      "D1_completeness": "The description stops at listing encodings and does not describe the distribution of bubbles or where larger values occur, which is the main insight of the chart.",
+      "D1_context_alignment": "The alt text does not contradict the caption or surrounding discussion, but it ignores the analytical purpose of the visualization.",
+      "D2_conciseness": "Very concise, but oversimplified to the point of losing meaning.",
+      "D2_language_quality": "Language is clear and neutral, but generic.",
+      "D2_imaginability": "A BLV reader cannot form a mental image of where bubbles are large or small across the grid."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "not present",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "not present",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.6
+  },
+  {
+    "sample_id": "test_83",
+    "chart_type": "timeline chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 3,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Axes and task categories are correctly identified. No false numerical or inferential claims are made, but in the cost of no informative data about the chart.",
+      "D1_completeness": "Participant color coding, distribution of times, and key contrasts between control and mini conditions are omitted, which hides the main visual message.",
+      "D1_context_alignment": "The description does not contradict the caption or local text, but it does not reflect the central findings shown visually.",
+      "D2_conciseness": "Very concise, but brevity comes at the expense of accessibility-relevant details.",
+      "D2_language_quality": "Language is clear but generic and list-like rather than descriptive.",
+      "D2_imaginability": "A BLV reader cannot reconstruct the distributions, participant differences, or relative task durations from this description."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "not present",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partially covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "not present",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.4
+  },
+  {
+    "sample_id": "test_84",
+    "chart_type": "timeline chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 3,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The axes and conditions are identified correctly. No false numerical claims are made.",
+      "D1_completeness": "The alt text does not describe participant color coding, the distribution of times, or the key visual contrast between Control and ATQ.",
+      "D1_context_alignment": "The description does not contradict the caption or local text but fails to reflect the main takeaway shown visually.",
+      "D2_conciseness": "The text is short and direct, but brevity sacrifices important visual information.",
+      "D2_language_quality": "Language is clear but generic and not tailored to accessibility needs.",
+      "D2_imaginability": "A BLV reader cannot reconstruct how points are distributed or how participants differ across conditions."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "not present",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partially covered",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "not present",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.4
+  },
+  {
+    "sample_id": "test_85",
+    "chart_type": "time series_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 6,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Descriptions of the three rows and color coding are accurate, but spatial and temporal relationships are only loosely specified.",
+      "D1_completeness": "The purpose of the diagram—how windows are labeled relative to the aid-shown event—is not clearly summarized, which is central for BLV understanding.",
+      "D1_context_alignment": "The alt text is consistent with the caption and local text and does not contradict the described windowing and labeling method.but not very informative about the results.",
+      "D2_conciseness": "The text is concise but fragmented, reading like a list rather than a coherent description.",
+      "D2_language_quality": "Language is clear but mechanical and repetitive, with limited narrative flow.",
+      "D2_imaginability": "A BLV reader may struggle to reconstruct the alignment between the gaze signal, aid-shown segment, and labeled windows."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.35
+  },
+  {
+    "sample_id": "test_86",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 6,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The text claims the accuracy “plateaus” after epoch 237, but the chart shows clear drops and variability after this point. This misrepresents the visual trend.",
+      "D1_completeness": "Axes, scale, total number of epochs, and the decline after epoch 237 are omitted, leaving the main training pattern incomplete for BLV readers.",
+      "D1_context_alignment": "The alt text does not completely align with the caption and local text.",
+      "D2_conciseness": "Very short, but brevity comes at the cost of losing essential visual information.",
+      "D2_language_quality": "Language is readable but vague (“progression of training”) and not chart-specific.",
+      "D2_imaginability": "A BLV reader cannot reconstruct the shape of the curve, the sharp rise, the plateau, or the later decline from this description."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partially covered",
+        "L2": "partially covered",
+        "L3": "incorrect",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partially covered",
+        "L2": "missing",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "partially covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.4
+  },
+  {
+    "sample_id": "test_87",
+    "chart_type": "timeline chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 3,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 8,
+      "D2_language_quality": 7,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The identification of position and velocity curves is correct. Event markers visible in the figure are not described, but no false claims are made.",
+      "D1_completeness": "The temporal relationship between position, velocity, and key events (start, peak, reach) is not explained, which is central to understanding the chart.",
+      "D1_context_alignment": "The description is consistent with the caption and local text and does not contradict the methodological explanation, but very generic.",
+      "D2_conciseness": "The text is short and focused, but omits key visual elements rather than efficiently summarizing them.",
+      "D2_language_quality": "Language is clear and neutral, though slightly under-specified for an academic alt text.",
+      "D2_imaginability": "A BLV reader cannot fully reconstruct the motion phases or the timing of peak velocity from the description alone."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.9
+  },
+  {
+    "sample_id": "test_88",
+    "chart_type": "timeline chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 6,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 8,
+      "D2_language_quality": 7,
+      "D2_imaginability": 7
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Description of alignment, baseline definition, events, and error bars is accurate. Minor over-reliance on procedural details rather than visible patterns.",
+      "D1_completeness": "The main temporal pattern (rise, peak, decline) is not clearly summarized, reducing interpretability for BLV readers.",
+      "D1_context_alignment": "Alt text aligns with caption and local text, but assumes familiarity with tooltip events without describing their visual impact.",
+      "D2_conciseness": "Text length is reasonable.",
+      "D2_language_quality": "Language is clear and professional, though somewhat technical for alt text, and could be better categorized for better understanding.",
+      "D2_imaginability": "Events and axes are described, but the overall shape of the curve is not emphasized enough."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.55
+  },
+  {
+    "sample_id": "test_89",
+    "chart_type": "timeline chart_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 6,
+      "D1_context_alignment": 3,
+      "D2_conciseness": 6,
+      "D2_language_quality": 7,
+      "D2_imaginability": 7
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Event markers, error bars, and significance bars are described accurately, but wording is occasionally imprecise and repetitive.",
+      "D1_completeness": "The main temporal patterns and differences between Easy, Middle, and Hard are not summarized; readers must infer trends from procedural descriptions.",
+      "D1_context_alignment": "Alt text just repeated the caption.",
+      "D2_conciseness": "The text is verbose and procedural, repeating caption content rather than prioritizing visual structure and trends.",
+      "D2_language_quality": "Language is understandable but not consistently academic.",
+      "D2_imaginability": "Visual elements are named, but the relative shapes and separations of the three curves are not clearly described."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.85
+  },
+  {
+    "sample_id": "test_90",
+    "chart_type": "box plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 5,
+      "D1_completeness": 7,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Those mentioned numbers are approximately correct but neither specifically labeled in chart ,nor has been supported  by local text",
+      "D1_completeness": "The grouping of participants and overall pattern are included, but distribution shape, variability, and visual grouping are not clearly described.",
+      "D1_context_alignment": "The description aligns with caption and local text but depends on statistical context rather than visual evidence.",
+      "D2_conciseness": "Text is compact but overloaded with precise numbers that do not improve visual accessibility.",
+      "D2_language_quality": "Language is clear but overly technical for alt text, increasing cognitive load for BLV users.",
+      "D2_imaginability": "The box-plot structure, spread, and relative heights are not described clearly enough to support mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partially covered",
+        "L2": "partially covered",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "partially present"
+      }
+    },
+    "hq_cat_total": 6.6
+  },
+  {
+    "sample_id": "test_91",
+    "chart_type": "scatter plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 9,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 8,
+      "D2_language_quality": 9,
+      "D2_imaginability": 9
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": null,
+      "D1_completeness": "Key structural features, clustering, and empty regions are clearly described. No major visual element is omitted.",
+      "D1_context_alignment": "Alt text aligns with the caption and does not contradict the paper but avoids explicitly stating sample size consistency beyond what is visible.",
+      "D2_conciseness": "Information-dense and mostly efficient, though some phrases could be shortened without loss.",
+      "D2_language_quality": "Language is clear, neutral, and appropriate for accessibility contexts.",
+      "D2_imaginability": "Spatial structure, gradients, and empty regions are described clearly enough to form a mental image."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 8.7
+  },
+  {
+    "sample_id": "test_92",
+    "chart_type": "scatter plot _multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 8,
+      "D1_completeness": 6,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 8,
+      "D2_language_quality": 8,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Partially mentioned L4 without any support.",
+      "D1_completeness": "While main trends are mentioned, the dense distribution of individual points and overlap between groups are omitted, limiting understanding of variability for BLV readers.",
+      "D1_context_alignment": "Alt text repeated the caption. The alt text depends on external statistical context instead of visual evidence.",
+      "D2_conciseness": "The text is compact and avoids unnecessary repetition, though some sentences could be simplified.",
+      "D2_language_quality": "Language is clear and professional.",
+      "D2_imaginability": "Is not completely easy for imagination."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "covered",
+        "L4": "partially"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "partially present"
+      }
+    },
+    "hq_cat_total": 7.1
+  },
+  {
+    "sample_id": "test_93",
+    "chart_type": "box plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 6,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 8,
+      "D2_language_quality": 7,
+      "D2_imaginability": 6
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "The description of the downward trend and stabilization is consistent with the chart.",
+      "D1_completeness": "The alt text omits key structural information: number of blocks, units on the y-axis, variability within blocks, and presence of outliers. This limits understanding for BLV readers.",
+      "D1_context_alignment": "The description aligns with the caption and local text, but does not explicitly reflect the staged grouping shown by vertical separators.",
+      "D2_conciseness": "The text is short and focused, though conciseness comes at the cost of missing important visual details.",
+      "D2_language_quality": "Language is readable, but informal phrasing (“swoops downward”) reduces academic tone .",
+      "D2_imaginability": "The reader cannot clearly imagine the box-plot structure, spread, or outliers from the description alone."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partially covered",
+        "L2": "covered",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partially covered",
+        "L2": "partially covered",
+        "L3": "covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "partially covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.25
+  },
+  {
+    "sample_id": "test_94",
+    "chart_type": "bar chart_panel",
+    "gold_scores": {
+      "D1_factual_accuracy": 9,
+      "D1_completeness": 7,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 7,
+      "D2_language_quality": 5,
+      "D2_imaginability": 7
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "All reported values match the chart.",
+      "D1_completeness": "Major patterns are under-described. Similarity of response times and the pronounced drop in MOT accuracy during walking are not explicitly summarized.",
+      "D1_context_alignment": "Alt text does not contradict the caption or local text, but it does not clarify that VS differences are non-significant, leaving context incomplete.",
+      "D2_conciseness": "Text is repetitive and panel-by-panel listing could be compressed without losing information.",
+      "D2_language_quality": "Multiple spelling and grammar errors reduce clarity for screen reader users.",
+      "D2_imaginability": "relationships between bars and overall patterns are weakly described, limiting mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partially covered",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 7.5
+  },
+  {
+    "sample_id": "test_96",
+    "chart_type": "line chart_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 5,
+      "D1_context_alignment": 8,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Main claims are correct, but some detectors shown in the chart are ignored.",
+      "D1_completeness": "Focuses only on ensemble vs. alt/alt2 and omits trends for other detectors and the effect of training size.",
+      "D1_context_alignment": "Directionally aligned with caption and local text.",
+      "D2_conciseness": "Concise, but overly narrow in scope.",
+      "D2_language_quality": "Clear and readable, but simplistic.",
+      "D2_imaginability": "Does not describe axes, scale, or overall shape of the curves."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.5
+  },
+  {
+    "sample_id": "test_98",
+    "chart_type": "density plot_multiple",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 3,
+      "D1_context_alignment": 5,
+      "D2_conciseness": 8,
+      "D2_language_quality": 7,
+      "D2_imaginability": 4
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correctly identifies the plot type and mean/median markers, but does not specify what differs between the three panels.",
+      "D1_completeness": "Does not explain per-HIT vs. per-cluster, the meaning of D=0 vs. D=1, or how distributions shift.",
+      "D1_context_alignment": "Matches caption text but not the analytical intent described in the paper.",
+      "D2_conciseness": "Very concise, but overly minimal for accessibility.",
+      "D2_language_quality": "Clear and neutral, but generic.",
+      "D2_imaginability": "Does not help a blind reader imagine differences across panels or distribution shapes."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "covered",
+        "L3": "partial",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.4
+  },
+  {
+    "sample_id": "test_99",
+    "chart_type": "density plot_scatter plot",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 3,
+      "D1_context_alignment": 5,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Statements are directionally correct, but oversimplified and detached from the full figure structure.",
+      "D1_completeness": "Ignores Panel A entirely, omits categories, and does not explain how distributions differ across HIT types.",
+      "D1_context_alignment": "Mentions correct topical examples, but lacks alignment with the authors comparison across seven categories.",
+      "D2_conciseness": "Very short, but at the cost of information.",
+      "D2_language_quality": "Clear language, but reads like a takeaway sentence, not alt text.",
+      "D2_imaginability": "Does not describe layout, axes, or how information is encoded visually."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "weak",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 5.1
+  },
+  {
+    "sample_id": "test_100",
+    "chart_type": "time series_pie chart",
+    "gold_scores": {
+      "D1_factual_accuracy": 6,
+      "D1_completeness": 5,
+      "D1_context_alignment": 7,
+      "D2_conciseness": 8,
+      "D2_language_quality": 8,
+      "D2_imaginability": 3
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Correctly identifies chart types and purpose but does not describe visible trends.",
+      "D1_completeness": "Fails to mention how error types change over time or which websites dominate errors.",
+      "D1_context_alignment": "Aligned with caption and local text at a high level, but lacks descriptive depth expected for this figure.",
+      "D2_conciseness": "Short and readable, but overly minimal for accessibility needs.",
+      "D2_language_quality": "Clear and neutral, but generic and underspecified.",
+      "D2_imaginability": "Does not help a blind reader form a mental image of the data patterns or layout."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "weak",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "covered",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "acceptable",
+        "L2": "aligned",
+        "L3": "weak",
+        "L4": "not present"
+      }
+    },
+    "hq_cat_total": 6.05
+  },
+  {
+    "sample_id": "test_101",
+    "chart_type": "dot plot_single",
+    "gold_scores": {
+      "D1_factual_accuracy": 3,
+      "D1_completeness": 2,
+      "D1_context_alignment": 2,
+      "D2_conciseness": 7,
+      "D2_language_quality": 7,
+      "D2_imaginability": 2
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Original alt text states only the scale meaning and omits the plotted values, groups, and trends, providing an incomplete and misleading description.",
+      "D1_completeness": "Fails to mention the four interface categories, the two age groups, or which interfaces are most and least preferred.",
+      "D1_context_alignment": "It is just repeating the caption. does not give any extra information.",
+      "D2_conciseness": "Very short, but cocisness comes at the cost of losing essential information.",
+      "D2_language_quality": "Clear but overly minimal and descriptive only of the scale.",
+      "D2_imaginability": "A blind reader cannot reconstruct the chart structure, lines, or preferences from the description."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_completeness": {
+        "L1": "missing",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "not present"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "missing",
+        "L3": "missing",
+        "L4": "present (unsupported)"
+      }
+    },
+    "hq_cat_total": 3.25
+  },
+  {
+    "sample_id": "test_102",
+    "chart_type": "bar chart_heat map",
+    "gold_scores": {
+      "D1_factual_accuracy": 7,
+      "D1_completeness": 7,
+      "D1_context_alignment": 6,
+      "D2_conciseness": 7,
+      "D2_language_quality": 8,
+      "D2_imaginability": 5
+    },
+    "gold_comments": {
+      "D1_factual_accuracy": "Counts are correct, but panel (c) claims “tier 1 cities,” which is not shown explicitly on the map.",
+      "D1_completeness": "Reports values but does not summarize dominant groups or distributions across panels.",
+      "D1_context_alignment": "Generally aligned with caption; location description is vague and not supported by legend.",
+      "D2_conciseness": "Efficient listing, though slightly repetitive across panels.",
+      "D2_language_quality": "Clear",
+      "D2_imaginability": "Bar structure is understandable, but the map panel lacks spatial detail for mental reconstruction."
+    },
+    "gold_coverage": {
+      "D1_factual_accuracy": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "invented"
+      },
+      "D1_completeness": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "partial",
+        "L4": "missing"
+      },
+      "D1_context_alignment": {
+        "L1": "partial",
+        "L2": "partial",
+        "L3": "missing",
+        "L4": "missing"
+      }
+    },
+    "hq_cat_total": 6.7
+  }
+]
